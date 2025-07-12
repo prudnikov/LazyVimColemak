@@ -72,7 +72,7 @@ return {
           ["n"] = "next_source",
           ["e"] = "prev_source",
           ["i"] = "confirm",
-          ["l"] = "none",
+          ["l"] = "focus_input",
           ["<C-n>"] = "list_down",
           ["<C-e>"] = "list_up",
           ["<space>"] = "none",
