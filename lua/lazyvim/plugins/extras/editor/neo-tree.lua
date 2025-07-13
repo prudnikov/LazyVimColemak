@@ -36,9 +36,11 @@ return {
         desc = "Buffer Explorer",
       },
     },
+
     deactivate = function()
       vim.cmd([[Neotree close]])
     end,
+
     init = function()
       -- FIX: use `autocmd` for lazy-loading neo-tree instead of directly requiring it,
       -- because `cwd` is not set up properly.
@@ -58,6 +60,7 @@ return {
         end,
       })
     end,
+    
     opts = {
       sources = { "filesystem", "buffers", "git_status" },
       open_files_do_not_replace_types = { "terminal", "Trouble", "trouble", "qf", "Outline" },
