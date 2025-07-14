@@ -76,10 +76,10 @@ return {
           ["e"] = "prev_source",
           ["i"] = "confirm",
           -- ["l"] = "focus_input",
-          ["l"] = "none",
+          ["l"] = "noop",
           ["<C-n>"] = "list_down",
           ["<C-e>"] = "list_up",
-          ["<space>"] = "none",
+          ["<space>"] = "noop",
           ["Y"] = {
             function(state)
               local node = state.tree:get_node()
