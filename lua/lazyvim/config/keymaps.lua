@@ -10,7 +10,7 @@ map("n", "l", "i", { desc = "Insert Mode" })
 -- Navigation
 map("n", "h", "h", { desc = "Left" })
 map("n", "n", "j", { desc = "Down" })
-map("n", "e", "i", { desc = "Up" })
+map("n", "e", "k", { desc = "Up" })
 map("n", "i", "l", { desc = "Right" })
 
 -- better up/down

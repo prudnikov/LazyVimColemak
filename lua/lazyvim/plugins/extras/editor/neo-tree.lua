@@ -60,7 +60,7 @@ return {
         end,
       })
     end,
-    
+
     opts = {
       sources = { "filesystem", "buffers", "git_status" },
       open_files_do_not_replace_types = { "terminal", "Trouble", "trouble", "qf", "Outline" },
@@ -75,7 +75,8 @@ return {
           ["n"] = "next_source",
           ["e"] = "prev_source",
           ["i"] = "confirm",
-          ["l"] = "focus_input",
+          -- ["l"] = "focus_input",
+          ["l"] = "none",
           ["<C-n>"] = "list_down",
           ["<C-e>"] = "list_up",
           ["<space>"] = "none",
