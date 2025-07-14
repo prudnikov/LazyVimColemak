@@ -7,12 +7,17 @@ local map = LazyVim.safe_keymap_set
 -- insert mode
 map("n", "l", "i", { desc = "Insert Mode" })
 
--- better up/down
-map({ "n", "x" }, "n", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr = true, silent = true })
-map({ "n", "x" }, "<Down>", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr = true, silent = true })
-map({ "n", "x" }, "e", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
-map({ "n", "x" }, "<Up>", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
+-- Navigation
+map("n", "h", "h", { desc = "Left" })
+map("n", "n", "j", { desc = "Down" })
+map("n", "e", "i", { desc = "Up" })
 map("n", "i", "l", { desc = "Right" })
+
+-- better up/down
+-- map({ "n", "x" }, "n", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr = true, silent = true })
+-- map({ "n", "x" }, "<Down>", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr = true, silent = true })
+-- map({ "n", "x" }, "e", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
+-- map({ "n", "x" }, "<Up>", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
 
 -- Move to window using the <ctrl> hjkl keys
 map("n", "<C-h>", "<C-w>h", { desc = "Go to Left Window", remap = true })
