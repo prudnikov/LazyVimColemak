@@ -72,8 +72,10 @@ return {
       window = {
         mappings = {
           ["h"] = "close_node",
-          ["n"] = "next_source",
-          ["e"] = "prev_source",
+          -- ["n"] = "next_source",
+          -- ["e"] = "prev_source",
+          ["n"] = "up",
+          ["e"] = "down",
           ["i"] = "confirm",
           -- ["l"] = "focus_input",
           ["l"] = "noop",
