@@ -8,10 +8,10 @@ local map = LazyVim.safe_keymap_set
 map("n", "l", "i", { desc = "Insert Mode" })
 
 -- Navigation
-map("n", "h", "h", { desc = "Left" })
-map("n", "n", "j", { desc = "Down" })
-map("n", "e", "k", { desc = "Up" })
-map("n", "i", "l", { desc = "Right" })
+map({ "n", "v" }, "h", "h", { desc = "Left" })
+map({ "n", "v" }, "n", "j", { desc = "Down" })
+map({ "n", "v" }, "e", "k", { desc = "Up" })
+map({ "n", "v" }, "i", "l", { desc = "Right" })
 
 -- better up/down
 -- map({ "n", "x" }, "n", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr = true, silent = true })
